@@ -1,11 +1,20 @@
 import React from "react";
 import "./Button.css";
+import Operate from "../operate";
 
 const NumberButton = props => {
   if (Number.isInteger(props.numprop)) {
-    return <div className="numbut">{props.numprop}</div>;
+    return (
+      <button onClick={() => Operate(props.numprop)} className="numbut">
+        {props.numprop}
+      </button>
+    );
   } else {
-    return <div className="Actions">{props.numprop}</div>;
+    return (
+      <button onClick={() => Operate(props.numprop)} className="Actions">
+        {props.numprop}
+      </button>
+    );
   }
 };
 

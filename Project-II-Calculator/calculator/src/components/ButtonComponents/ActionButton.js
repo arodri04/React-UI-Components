@@ -2,7 +2,11 @@ import React from "react";
 import "./Button.css";
 
 const ActionButton = props => {
-  return <div className="LB">{props.numprop}</div>;
+  return (
+    <button onClick={() => console.log(props.numprop)} className="LB">
+      {props.numprop}
+    </button>
+  );
 };
 
 export default ActionButton;

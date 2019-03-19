@@ -4,13 +4,14 @@ import "./index.css";
 import CalculatorDisplay from "./components/DisplayComponents/CalculatorDisplay";
 import NumberButton from "./components/ButtonComponents/NumberButton";
 import ActionButton from "./components/ButtonComponents/ActionButton";
+import Operate from "./components/operate";
 
 let display = [];
 
 const App = () => {
   return (
     <div className="daddydiv">
-      <CalculatorDisplay />
+      <CalculatorDisplay numprop={Operate()} />
       <ActionButton numprop={"clear"} />
       <NumberButton numprop={"÷"} />
       <NumberButton numprop={7} />
