@@ -1,5 +1,40 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0.4rem;
   font-family: sans-serif;
+  width: 700px;
+  box-sizing: border-box;
+}
+
+.headdiv {
+  display: flex;
+}
+
+.bodydiv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.bodydiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  border: 1px solid lightgray;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+.cardc {
+  margin: 10px;
+}
+.cardc a {
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.headt span {
+  color: lightgray;
+  font-size: 50%;
 }
